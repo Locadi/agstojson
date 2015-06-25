@@ -45,4 +45,4 @@ var server = http.createServer(function(req, res) {
 	request.write(postdata);
 	request.end();
 });
-server.listen(8080);
+server.listen(process.env.PORT||8080);
